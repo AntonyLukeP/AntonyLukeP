@@ -1,0 +1,93 @@
+<svg viewBox="0 0 960 460" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Courier New',monospace">
+  <defs>
+    <style>
+      .bg { fill: #0A0E14; }
+      .grid { stroke: #161C27; stroke-width: 1; }
+      .edge { fill: none; stroke: #22303F; stroke-width: 1.4; }
+      .pulse { fill: none; stroke: #00D9A3; stroke-width: 2; stroke-dasharray: 6 10; }
+      .pulse-amber { fill: none; stroke: #FFB020; stroke-width: 2; stroke-dasharray: 6 10; }
+      .node { fill: #0F141C; stroke: #263140; stroke-width: 1.5; }
+      .node-core { fill: #0F141C; stroke: #00D9A3; stroke-width: 1.6; }
+      .ring { fill: none; stroke: #00D9A3; stroke-width: 1; opacity: 0; }
+      .label { fill: #E6EDF3; font-size: 13px; font-weight: 600; letter-spacing: 0.3px; }
+      .sublabel { fill: #6B7684; font-size: 10.5px; letter-spacing: 0.5px; text-transform: uppercase; }
+      .status-dot { }
+      @keyframes flow { to { stroke-dashoffset: -160; } }
+      @keyframes flowSlow { to { stroke-dashoffset: -160; } }
+      @keyframes ringPulse { 0% { r: 22; opacity: 0.55; stroke-width: 2; } 100% { r: 46; opacity: 0; stroke-width: 0.5; } }
+      @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+      .pulse { animation: flow 2.6s linear infinite; }
+      .pulse-amber { animation: flowSlow 3.4s linear infinite; }
+      .ring1 { animation: ringPulse 2.8s ease-out infinite; }
+      .ring2 { animation: ringPulse 2.8s ease-out infinite; animation-delay: 1.4s; }
+      .live-dot { animation: blink 1.6s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="960" height="460" rx="14"/>
+  <g class="grid">
+    <path d="M0,115 H960 M0,230 H960 M0,345 H960" stroke-opacity="0.5"/>
+    <path d="M160,0 V460 M480,0 V460 M800,0 V460" stroke-opacity="0.3"/>
+  </g>
+
+  <!-- header strip -->
+  <circle class="live-dot" cx="28" cy="26" r="4" fill="#00D9A3"/>
+  <text x="42" y="30" class="sublabel" fill="#8B96A5">SYSTEM TOPOLOGY — LIVE</text>
+  <text x="932" y="30" class="sublabel" fill="#4B5563" text-anchor="end">UPTIME 99.98%</text>
+
+  <!-- core node: ENGINEER -->
+  <g>
+    <circle class="ring ring1" cx="480" cy="230" r="22"/>
+    <circle class="ring ring2" cx="480" cy="230" r="22"/>
+    <circle class="node-core" cx="480" cy="230" r="30"/>
+    <text x="480" y="226" text-anchor="middle" class="label" font-size="11">CORE</text>
+    <text x="480" y="240" text-anchor="middle" class="sublabel" fill="#00D9A3" font-size="9">operator</text>
+  </g>
+
+  <!-- service nodes -->
+  <g>
+    <circle class="node" cx="200" cy="120" r="26"/>
+    <text x="200" y="150" text-anchor="middle" class="label" font-size="11">HELIOS</text>
+    <text x="200" y="163" text-anchor="middle" class="sublabel" font-size="8.5">workflow engine</text>
+  </g>
+
+  <g>
+    <circle class="node" cx="200" cy="340" r="26"/>
+    <text x="200" y="370" text-anchor="middle" class="label" font-size="11">AEGIS</text>
+    <text x="200" y="383" text-anchor="middle" class="sublabel" font-size="8.5">observability</text>
+  </g>
+
+  <g>
+    <circle class="node" cx="760" cy="100" r="24"/>
+    <text x="760" y="72" text-anchor="middle" class="label" font-size="11">AI AGENTS</text>
+    <text x="760" y="59" text-anchor="middle" class="sublabel" font-size="8.5">autonomous systems</text>
+  </g>
+
+  <g>
+    <circle class="node" cx="800" cy="230" r="24"/>
+    <text x="800" y="200" text-anchor="middle" class="label" font-size="11">BACKEND</text>
+    <text x="800" y="187" text-anchor="middle" class="sublabel" font-size="8.5">production services</text>
+  </g>
+
+  <g>
+    <circle class="node" cx="760" cy="360" r="24"/>
+    <text x="760" y="392" text-anchor="middle" class="label" font-size="11">FULL STACK</text>
+    <text x="760" y="405" text-anchor="middle" class="sublabel" font-size="8.5">applications</text>
+  </g>
+
+  <!-- edges -->
+  <path class="edge" d="M226,130 C320,150 400,190 452,215"/>
+  <path class="edge" d="M226,330 C320,310 400,270 452,245"/>
+  <path class="edge" d="M508,215 C580,180 680,130 738,108"/>
+  <path class="edge" d="M510,230 C600,230 700,230 776,230"/>
+  <path class="edge" d="M508,245 C580,290 680,340 738,352"/>
+
+  <!-- animated pulses on top of edges -->
+  <path class="pulse" d="M226,130 C320,150 400,190 452,215"/>
+  <path class="pulse-amber" d="M226,330 C320,310 400,270 452,245"/>
+  <path class="pulse" d="M508,215 C580,180 680,130 738,108"/>
+  <path class="pulse-amber" d="M510,230 C600,230 700,230 776,230"/>
+  <path class="pulse" d="M508,245 C580,290 680,340 738,352"/>
+
+  <text x="480" y="440" text-anchor="middle" class="sublabel" fill="#4B5563">requests flow left → right in production. this graph does too.</text>
+</svg>

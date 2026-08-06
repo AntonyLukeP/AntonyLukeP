@@ -1,4 +1,4 @@
-<div align="center">
+<!-- <div align="center">
 
 <img src="assets/status-bar.svg" width="100%" alt="status: all systems operational" />
 
@@ -178,4 +178,4 @@ $ status --set-mood
 
 <div align="center">
 <sub>this readme is a running service. see <a href="DESIGN.md">DESIGN.md</a> for the architecture behind it.</sub>
-</div>
+</div> -->

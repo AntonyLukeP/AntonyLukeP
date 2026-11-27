@@ -148,7 +148,7 @@
 
 ---
 
-<h2 align="center">🚀 Featured Engineering Projects</h2>
+<!-- <h2 align="center">🚀 Featured Engineering Projects</h2>
 
 <table align="center" border="0" cellpadding="12" cellspacing="0" width="100%">
   <tr>
@@ -172,7 +172,7 @@
       <a href="https://github.com/AntonyLukeP?tab=repositories"><b>Inspect Repository on GitHub →</b></a>
     </td>
   </tr>
-</table>
+</table> -->
 
 ---
 
@@ -201,11 +201,11 @@
   </tr>
 </table>
 
-<p align="center">
+<!-- <p align="center">
   <a href="https://github.com/AntonyLukeP">
     <img src="https://github-readme-activity-graph.vercel.app/graph?username=AntonyLukeP&bg_color=0D1117&color=38BDF8&line=2F81F7&point=2EA043&area=true&area_color=2F81F7&hide_border=false" alt="Contribution Graph" width="100%" />
   </a>
-</p>
+</p> -->
 
 <!--
   CONTRIBUTION CALENDAR (via .github/workflows/metrics.yml):

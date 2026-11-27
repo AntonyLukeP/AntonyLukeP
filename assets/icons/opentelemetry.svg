@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="44" height="44" role="img" aria-label="OpenTelemetry">
+  <rect width="256" height="256" rx="60" fill="#242938"/>
+  <!-- OpenTelemetry-inspired telescope / signal mark -->
+  <g transform="translate(128,128) rotate(-40)">
+    <rect x="-56" y="-20" width="84" height="40" rx="8" fill="#F5A800"/>
+    <rect x="28" y="-26" width="32" height="52" rx="6" fill="#425CC7"/>
+    <rect x="-72" y="-12" width="18" height="24" rx="4" fill="#38BDF8"/>
+  </g>
+  <circle cx="80" cy="182" r="14" fill="#F5A800"/>
+  <line x1="88" y1="170" x2="118" y2="132" stroke="#94A3B8" stroke-width="8" stroke-linecap="round"/>
+  <line x1="92" y1="184" x2="152" y2="184" stroke="#94A3B8" stroke-width="8" stroke-linecap="round"/>
+</svg>

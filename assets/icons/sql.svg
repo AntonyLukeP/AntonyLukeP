@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="44" height="44" role="img" aria-label="SQL">
+  <rect width="256" height="256" rx="60" fill="#242938"/>
+  <!-- Database cylinder -->
+  <ellipse cx="128" cy="74" rx="64" ry="22" fill="#38BDF8"/>
+  <path d="M64 74v40c0 12.15 28.65 22 64 22s64-9.85 64-22V74c0 12.15-28.65 22-64 22s-64-9.85-64-22z" fill="#2F81F7"/>
+  <path d="M64 118v40c0 12.15 28.65 22 64 22s64-9.85 64-22v-40c0 12.15-28.65 22-64 22s-64-9.85-64-22z" fill="#1F6FEB"/>
+  <!-- SQL label -->
+  <text x="128" y="218" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="42" font-weight="800" fill="#F0F6FC" letter-spacing="3">SQL</text>
+</svg>

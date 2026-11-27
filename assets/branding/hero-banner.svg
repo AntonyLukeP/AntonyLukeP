@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" width="100%" height="260" role="img" aria-label="Antony Luke — Backend Software Engineer">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090D16" />
+      <stop offset="50%" stop-color="#0D1526" />
+      <stop offset="100%" stop-color="#0A192F" />
+    </linearGradient>
+    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2F81F7" stop-opacity="0" />
+      <stop offset="25%" stop-color="#38BDF8" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#2EA043" stop-opacity="0.9" />
+      <stop offset="75%" stop-color="#2F81F7" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#2F81F7" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F0F6FC" />
+      <stop offset="55%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#2F81F7" />
+    </linearGradient>
+    <radialGradient id="glowLeft" cx="18%" cy="35%" r="40%">
+      <stop offset="0%" stop-color="#2F81F7" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#2F81F7" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glowRight" cx="85%" cy="65%" r="38%">
+      <stop offset="0%" stop-color="#2EA043" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#2EA043" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1E293B" stroke-width="0.8" stroke-opacity="0.55" />
+    </pattern>
+  </defs>
+
+  <!-- Base Background -->
+  <rect width="1200" height="260" rx="12" fill="url(#bgGrad)" />
+  <rect width="1200" height="260" rx="12" fill="url(#grid)" />
+  <rect width="1200" height="260" rx="12" fill="url(#glowLeft)" />
+  <rect width="1200" height="260" rx="12" fill="url(#glowRight)" />
+
+  <!-- Outer Border -->
+  <rect x="1" y="1" width="1198" height="258" rx="11" fill="none" stroke="#30363D" stroke-width="1.5" />
+
+  <!-- Top Accent Bar -->
+  <rect x="60" y="0" width="1080" height="2.5" fill="url(#accentLine)" />
+
+  <!-- Decorative Distributed Nodes (Right Side) -->
+  <g stroke="#38BDF8" stroke-opacity="0.35" stroke-width="1.5" fill="none">
+    <line x1="930" y1="68" x2="1030" y2="105" />
+    <line x1="1030" y1="105" x2="1115" y2="62" />
+    <line x1="1030" y1="105" x2="1085" y2="178" />
+    <line x1="930" y1="68" x2="955" y2="172" />
+    <line x1="955" y1="172" x2="1085" y2="178" />
+  </g>
+  <g>
+    <circle cx="930" cy="68" r="5" fill="#2F81F7" />
+    <circle cx="1030" cy="105" r="7" fill="#38BDF8">
+      <animate attributeName="r" values="6;8.5;6" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="1115" cy="62" r="4.5" fill="#2EA043" />
+    <circle cx="955" cy="172" r="5" fill="#2EA043" />
+    <circle cx="1085" cy="178" r="6" fill="#2F81F7" />
+  </g>
+
+  <!-- Terminal Header Pill -->
+  <rect x="64" y="42" width="275" height="26" rx="13" fill="#161B22" stroke="#30363D" stroke-width="1" />
+  <circle cx="82" cy="55" r="4.5" fill="#2EA043">
+    <animate attributeName="opacity" values="1;0.35;1" dur="2.2s" repeatCount="indefinite" />
+  </circle>
+  <text x="96" y="59" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12" fill="#8B949E">
+    sys://antony-luke/backend-core
+  </text>
+
+  <!-- Main Title -->
+  <text x="64" y="132" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="52" font-weight="800" letter-spacing="1.5" fill="url(#titleGrad)">
+    ANTONY LUKE
+  </text>
+
+  <!-- Subtitle -->
+  <text x="66" y="168" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="18" font-weight="600" fill="#38BDF8" letter-spacing="1">
+    BACKEND SOFTWARE ENGINEER  ·  JAVA &amp; SPRING BOOT  ·  DISTRIBUTED SYSTEMS
+  </text>
+
+  <!-- Tagline -->
+  <text x="66" y="204" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#8B949E">
+    Designing reliable APIs, relational data models, and fault-tolerant backend architectures.
+  </text>
+
+  <!-- Bottom Accent Bar -->
+  <rect x="60" y="257.5" width="1080" height="2.5" fill="url(#accentLine)" />
+</svg>

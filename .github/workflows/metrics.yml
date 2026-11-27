@@ -2,7 +2,7 @@
 # GitHub Metrics — Engineering Dashboard Generator
 #
 # Generates:
-#   assets/metrics-calendar.svg  — standard contribution calendar
+#   assets/metrics/metrics-calendar.svg  — standard contribution calendar
 #
 # SETUP:
 #   1. github.com/settings/tokens/new → Classic PAT
@@ -35,7 +35,7 @@ jobs:
         uses: actions/checkout@v4
 
       # ── Contribution Calendar SVG ──────────────────────────────────
-      # Generates: assets/metrics-calendar.svg
+      # Generates: assets/metrics/metrics-calendar.svg
       # Plugins: standard calendar (current year), coding habits,
       #          language breakdown
       # ──────────────────────────────────────────────────────────────
@@ -48,7 +48,7 @@ jobs:
           base: ""
           config_timezone: Asia/Kolkata
           config_output: svg
-          filename: assets/metrics-calendar.svg
+          filename: assets/metrics/metrics-calendar.svg
           config_display: large
           config_padding: 6, 10
 
